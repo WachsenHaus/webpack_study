@@ -90,23 +90,10 @@
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n\r\nconsole.log('모듈방식');\r\nconsole.log(_math_js__WEBPACK_IMPORTED_MODULE_0__[\"sum\"](1, 2));\r\n// console.log('iife방식');\r\n// console.log(math.sum(1, 2));\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
-
-/***/ }),
-
-/***/ "./src/math.js":
-/*!*********************!*\
-  !*** ./src/math.js ***!
-  \*********************/
-/*! exports provided: sum */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sum\", function() { return sum; });\n// var math = math || {};\r\n\r\n// (function () {\r\n//   function sum(a, b) {\r\n//     return a + b;\r\n//   }\r\n//   math.sum = sum;\r\n// })();\r\n\r\n// 표쥰 모듈방식\r\nfunction sum(a, b) {\r\n  return a + b;\r\n}\r\n\n\n//# sourceURL=webpack:///./src/math.js?");
+eval("throw new Error(\"Module build failed (from ./my-webpack-loader.js):\\nLoaderRunnerError: Module 'D:\\\\0_study\\\\webpack_study\\\\my-webpack-loader.js' is not a loader (must have normal or pitch function)\\n    at loadLoader (D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\loader-runner\\\\lib\\\\loadLoader.js:43:20)\\n    at iteratePitchingLoaders (D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:169:2)\\n    at runLoaders (D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:365:2)\\n    at NormalModule.doBuild (D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:295:3)\\n    at NormalModule.build (D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:446:15)\\n    at Compilation.buildModule (D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:739:10)\\n    at D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:1111:12\\n    at D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:409:6\\n    at D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:155:13\\n    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:6:1)\\n    at AsyncSeriesWaterfallHook.lazyCompileHook (D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\tapable\\\\lib\\\\Hook.js:154:20)\\n    at D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:138:29\\n    at D:\\\\0_study\\\\webpack_study\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:346:9\\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)\");\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ })
 

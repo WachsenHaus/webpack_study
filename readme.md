@@ -54,3 +54,10 @@ _테스트 하기위한 명령어_
 
 https://stackoverflow.com/questions/31903692/how-can-i-use-es6-in-webpack-config-js
 링크 참조.
+
+## 로더
+
+### 로더의 역할
+
+웹팩은 모든 파일을 모듈로 바라본다.
+스타일시트,이미지,폰트등 모든것을 모듈로 본다.
