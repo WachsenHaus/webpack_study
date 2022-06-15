@@ -61,3 +61,8 @@ https://stackoverflow.com/questions/31903692/how-can-i-use-es6-in-webpack-config
 
 웹팩은 모든 파일을 모듈로 바라본다.
 스타일시트,이미지,폰트등 모든것을 모듈로 본다.
+
+`css-loader`와 `style-loader`를 같이 써야지 자바스크립트로된 css가 적용된다.
+`file-loader` 는 png파일을 불러오는데 사용한다.
+정적파일은 브라우저에서 캐쉬하는게 흔하다. 성능을 위해서 캐시를 하는데
+파일이 교체되었을때 교체를해야하기 때문에 예방방법으로 해싱이름을 사용하기도한다고 합니다.
