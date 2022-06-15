@@ -43,4 +43,14 @@ echo \"여기에 빌드 스크립트를 추가합니다\"
 
 1. 웹팩 헬프 명령어
    `.\node_modules\.bin\webpack --help`
-   mode는 개발환경이냐, 운영환경이냐 하면 development, production을 설정한다.
+   mode는 개발환경이냐, 운영환경이냐 하면 development, production을 설정한다. (필수)
+2. 모듈의 시작점을 entry 혹은 entrypoint라고한다. (필수)
+3. (필수) 번들링된 파일이 저장되는곳.
+
+_테스트 하기위한 명령어_
+`.\node_modules\.bin\webpack --mode development --entry ./src/app.js --output dist/main.js`
+
+## webpack.config.js에서 esmodule형태로 구현하는 방법
+
+https://stackoverflow.com/questions/31903692/how-can-i-use-es6-in-webpack-config-js
+링크 참조.
