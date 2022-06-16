@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const childProcess = require('child_process');
 const MyWebpackPlugin = require('./my-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
@@ -18,7 +20,12 @@ module.exports = {
     rules: [
       {
         test: /\.css$/, // test : 로더가 처리해야될 파일들의 패턴을 입력한다. 패턴이란 정규표현식이다.
-        use: [`style-loader`, 'css-loader'], // loader의 순서는 뒤에서부터 앞으로온다. css-loader 다음style-loader이다.
+        use: [
+          process.env.NODE_ENV === 'production'
+            ? MiniCssExtractPlugin.loader
+            : `style-loader`,
+          'css-loader',
+        ], // loader의 순서는 뒤에서부터 앞으로온다. css-loader 다음style-loader이다.
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -49,7 +56,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       templateParameters: {
-        env: process.env.NODE_ENV === 'development' ? '(개발용)' : '',
+        env: process.env.NODE_ENV === 'development' ? '(개발용)' : '(빌드용)',
       },
       //  설정한 옵션값을 사용하여 최적화를 한다.
       minify:
@@ -60,5 +67,12 @@ module.exports = {
             }
           : false,
     }),
+    new CleanWebpackPlugin(),
+    // 프로덕션일 경우에는 css파일로 추출하고 아닐경우
+    process.env.NODE_ENV === 'production'
+      ? new MiniCssExtractPlugin({
+          filename: '[name].css',
+        })
+      : [],
   ],
 };
