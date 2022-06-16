@@ -1,12 +1,6 @@
-import './app.css';
-import nyancat from './nyancat.jpg';
+import MainController from "./controllers/MainController.js";
+import "./main.css";
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.body.innerHTML = `
-    <img src="${nyancat}" />
-    `;
+document.addEventListener("DOMContentLoaded", () => {
+  new MainController();
 });
-
-console.log(process.env.NODE_ENV);
-console.log(TWO);
-console.log(api.domain);
