@@ -79,4 +79,7 @@ https://stackoverflow.com/questions/31903692/how-can-i-use-es6-in-webpack-config
 
 1. `bannerPlugin`
    1. 웹팩이 기본적으로 제공한다.
-2. `
+   2. 빌드에 배포정보를 넣을 수 있다.
+   3. `childProcess`를 사용하여 커맨드 명령어를 사용 할 수 있다.
+2. `DefinePlugIn`
+   1. 배포할때 환경에 따라 API 서버 주소가 다를 수 있다. 환경 의존적인 정보를 소스가 아닌 곳에서 관리하는 것이 좋다.
