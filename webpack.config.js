@@ -1,4 +1,5 @@
 const path = require('path');
+const MyWebpackPlugin = require('./my-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -27,4 +28,6 @@ module.exports = {
       },
     ],
   },
+  // 플러그인은 배열에다 추가를한다.
+  plugins: [new MyWebpackPlugin()],
 };
