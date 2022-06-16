@@ -1,8 +1,6 @@
-import './app.css';
-import nyancat from './nyancat.jpg';
+import './main.css';
+import MainController from './controllers/MainController.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.body.innerHTML = `
-    <img src="${nyancat}" />
-    `;
+  new MainController();
 });
