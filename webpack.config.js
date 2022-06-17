@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './src/app.js',
+    main: './app.js',
   },
   output: {
     path: path.resolve('./dist'),
@@ -29,6 +29,11 @@ module.exports = {
           name: '[name].[ext]?[hash]', //  파일로더가 파일을 output에 복사할때 원본파일,확장자명을하고 쿼리스트링으로 해쉬값을 입력한다.,
           limit: 20000, //2kb미만의 파일은 url-loader를 한다. 2kb 이상이면 file-loader가 실행되게한다.
         },
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
       },
     ],
   },

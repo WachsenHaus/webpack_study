@@ -83,3 +83,26 @@ https://stackoverflow.com/questions/31903692/how-can-i-use-es6-in-webpack-config
    3. `childProcess`를 사용하여 커맨드 명령어를 사용 할 수 있다.
 2. `DefinePlugIn`
    1. 배포할때 환경에 따라 API 서버 주소가 다를 수 있다. 환경 의존적인 정보를 소스가 아닌 곳에서 관리하는 것이 좋다.
+
+# 바벨
+
+https://jeonghwan-kim.github.io/series/2019/12/22/frontend-dev-env-babel.html
+크로스 브라우징을 고려하여 코드를 변화시켜 호환성을 지켜준다.
+이렇게 코드를 변화, 변화시키는 것을 `트랜스파일`이라고 한다.
+타입스크립트 -> 자바스크립트,
+JSX -> 자바스크립트 처럼 트랜스파일 후에도 여전히 코드를 읽을 수 있다.
+
+1. 파싱(Parsing)
+2. 변환(Transforming)
+3. 출력(Printing)
+
+## 플러그인
+
+바벨은 코드를 받아서 코드를 반환한다. 플러그인을 활용하여 코드를 가공후 반환 시킬 수 있다.
+
+### 플러그인 프리셋
+
+- preset-env
+- preset-flow
+- preset-react
+- preset-typescript
