@@ -83,6 +83,7 @@ https://stackoverflow.com/questions/31903692/how-can-i-use-es6-in-webpack-config
    3. `childProcess`를 사용하여 커맨드 명령어를 사용 할 수 있다.
 2. `DefinePlugIn`
    1. 배포할때 환경에 따라 API 서버 주소가 다를 수 있다. 환경 의존적인 정보를 소스가 아닌 곳에서 관리하는 것이 좋다.
+<<<<<<< HEAD
 
 # 바벨
 
@@ -106,3 +107,11 @@ JSX -> 자바스크립트 처럼 트랜스파일 후에도 여전히 코드를 �
 - preset-flow
 - preset-react
 - preset-typescript
+=======
+3. `HtmlWebpackPlugIn`
+   1. html을 만들어내는 플러그인, 여러 옵션을 사용함.
+4. `cleanWebpackPlugin`
+   1. 파일들을 지워주는 것
+5. `MiniCssExtractPlugin`
+   1. css스타일시트로 별도로 뽑는 플러그인이다.
+>>>>>>> 0c01408204f4964894b9e64701481fec965d1c6a
