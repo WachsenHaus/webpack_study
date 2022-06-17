@@ -5,11 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
     "build": "cross-env NODE_ENV=development webpack"
-=======
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js"
->>>>>>> 0c01408204f4964894b9e64701481fec965d1c6a
+
   },
   "author": "",
   "license": "ISC",
